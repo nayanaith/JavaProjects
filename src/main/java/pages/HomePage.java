@@ -1,4 +1,4 @@
-package framework.one;
+package pages;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;

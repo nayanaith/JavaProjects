@@ -1,14 +1,17 @@
 package com.framework.test;
+
 import java.util.concurrent.TimeUnit;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.junit.*;
 
-import pages.HomePage;
-import pages.LoginPage;
+import pageFactory.HomePage;
+import pageFactory.LoginPage;
 
-public class LoginPageTest {
+public class PageFactoryLoginPageTest {
 	WebDriver driver;
 	
 	HomePage hmPage;
@@ -40,5 +43,4 @@ public class LoginPageTest {
 		hmPage.signOut();
 		driver.close();
 	}//end closingActions
-	
-}//end LoginPageTest
+}//end PageFactoryLoginPageTest
