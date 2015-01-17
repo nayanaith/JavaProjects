@@ -1,15 +1,17 @@
 package pageFactory;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.*;
+
 
 public class HomePage {
 	WebDriver driver;
 	
-	@FindBy(xpath=".//*[@id='gb']/div[1]/div[1]/div[1]/div/a");
+	@FindBy(xpath=".//*[@id='gb']/div[1]/div[1]/div[1]/div/a")
 	WebElement homePageUserName ;
 	
 	@FindBy(xpath=".//*[@id='gb']/div[1]/div[1]/div[2]/div[5]/div[1]/a/span")

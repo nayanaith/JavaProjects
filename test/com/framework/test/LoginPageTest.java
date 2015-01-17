@@ -1,4 +1,6 @@
 package com.framework.test;
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -10,15 +12,16 @@ import pages.LoginPage;
 
 public class LoginPageTest {
 	WebDriver driver;
-	
 	HomePage hmPage;
 	LoginPage lgnPage;
 	
 	@Before
-	public void setup(){
-		driver = new FirefoxDriver();
+	public void setup() throws Exception{
+		//try 1
+		driver = new FirefoxDriver();		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://www.gmail.com");
+
 	}//end setup
 	
 	@Test
