@@ -1,4 +1,4 @@
-package framework.one;
+package pages;
 
 /**
  * Hello world!
